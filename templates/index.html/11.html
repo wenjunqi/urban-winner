@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>自动答题</title>
+</head>
+<body>
+    <h1>自动答题应用</h1>
+    <form method="POST">
+        <label for="question">请输入一个数学问题:</label>
+        <input type="text" name="question" id="question" required>
+        <button type="submit">提交</button>
+    </form>
+    {% if answer %}
+    <p>答案: {{ answer }}</p>
+    {% endif %}
+</body>
+</html>
